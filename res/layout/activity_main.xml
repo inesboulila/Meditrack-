@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".MainActivity"
+    android:background="#6386E9">
+    <!-- Dark Indigo background -->
+
+    <!-- Welcome Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#40FFFFFF"
+        android:elevation="8dp"
+        android:layout_margin="16dp">
+        <!-- A translucent white for the container background -->
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to MediTrack+"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#66000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/taglineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Personal Health Hub"
+            android:textSize="16sp"
+            android:textColor="#C5CAE9"
+            android:paddingBottom="30dp" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#4CAF50"
+            android:stateListAnimator="@null" />
+        <!-- A vibrant green for the button -->
+
+        <!-- More Info Button -->
+        <Button
+            android:id="@+id/moreButton"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="More Info"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:stateListAnimator="@null"
+            android:backgroundTint="#2196F3" />
+        <!-- A nice blue for the button -->
+
+        <ProgressBar
+            android:id="@+id/loadingBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:progressTint="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
