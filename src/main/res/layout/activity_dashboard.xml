@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3E5F5">
+
+    <!-- Top Purple Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#7B1FA2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvWelcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Personal Health Hub"
+            android:textColor="#E1BEE7"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <!-- ScrollView in case screens are small -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Card 1: Medications -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💊  Medications"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule and track your pills"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/btnMedications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Card 2: Vitals -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="❤️  Health Vitals"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log BP, Sugar, and Weight"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/btnVitals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Card 3: BMI / Weight -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚖️  BMI Calculator"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check if you are at a healthy weight"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/btnBMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:backgroundTint="#FF9800"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- SOS Button -->
+            <Button
+                android:id="@+id/btnSOS"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="🆘  CALL EMERGENCY"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:elevation="6dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

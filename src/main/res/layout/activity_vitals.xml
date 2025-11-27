@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E0F2F1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Vitals"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#00695C"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/etBP"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="BP (120/80)"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="2dp"/>
+
+        <EditText
+            android:id="@+id/etSugar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Sugar (90)"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveVital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Reading"
+        android:backgroundTint="#009688"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+        android:id="@+id/listViewVitals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#757575"/>
+</LinearLayout>

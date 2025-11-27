@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="14dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvVitalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nov 25, 10:00 AM"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvVitalData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BP: 120/80 | Sugar: 95"
+        android:textSize="18sp"
+        android:textColor="#333"/>
+</LinearLayout>
